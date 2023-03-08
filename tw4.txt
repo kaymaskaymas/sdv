@@ -1,0 +1,60 @@
+HTML
+
+<html>
+<head>
+	<title> Program 1</title>
+</head>
+<body>
+<center>
+	<form action="http://localhost:80/myphp/store.php" method="post">
+
+		Name: <input type="text" name="name"> <br><br>
+		Address1: <input type="text" name="add1"> <br><br>
+		Address2: <input type="text" name="add2"> <br><br>
+		email: <input type="text" name="email"> <br><br>
+
+		<input type="submit" value="Submit"> <br><br>
+
+	</form>Name<form action="http://localhost/myphp/search.php" method="post">
+
+		<input type="text" name="name2">
+		<input type="submit" value="Submit" /> <br><br>
+</center>
+</form>
+</body>
+</html>
+
+
+PHP
+
+<?php
+$con = mysqli_connect("localhost","root","","gr");
+if (!$con)
+{
+die('Could not connect: ' . mysql_error());
+}
+
+$sql="INSERT INTO gr.contact VALUES('$_POST[name1]','$_POST[add1]','$_POST[add2]','$_POST[email]')";
+if (!mysqli_query($con,$sql))
+{
+die('Error: ' . mysqli_error());
+}
+echo "1 Record Added";
+mysqli_close($con);
+
+?>
+
+
+HOW TO EXECUTE
+open xampp
+start apache and mysql
+
+open browser-> http://localhost/phpmyadmin/
+create db-> gr
+create table-> contact-> name1, add1, add2, email
+text text text text 40 40 40 40
+run html fike
+enter input data
+reload-> http://localhost/phpmyadmin/
+samne ka samaj lo
+
