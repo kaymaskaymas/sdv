@@ -44,6 +44,8 @@ mysqli_close($con);
 HOW TO EXECUTE
 open xampp
 start apache and mysql
+save html and php file in a folder "myphp" folder in htdocs folder
+i.e. C:\xampp\htdocs\myphp
 
 open browser-> http://localhost/phpmyadmin/
 create db-> gr
