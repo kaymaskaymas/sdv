@@ -1,4 +1,4 @@
-HTML
+WITHOUT SEARCH HTML
 
 <html>
 <head>
@@ -8,21 +8,17 @@ HTML
 <center>
 	<form action="http://localhost:80/myphp/store.php" method="post">
 
-		Name: <input type="text" name="name"> <br><br>
+		Name: <input type="text" name="name1"> <br><br>
 		Address1: <input type="text" name="add1"> <br><br>
 		Address2: <input type="text" name="add2"> <br><br>
 		email: <input type="text" name="email"> <br><br>
 
 		<input type="submit" value="Submit"> <br><br>
 
-	</form>Name<form action="http://localhost/myphp/search.php" method="post">
-
-		<input type="text" name="name2">
-		<input type="submit" value="Submit" /> <br><br>
-</center>
-</form>
+	</form>
 </body>
 </html>
+
 
 
 PHP
@@ -58,7 +54,8 @@ enter input data
 reload-> http://localhost/phpmyadmin/
 samne ka samaj lo
 
-WITHOUT SEARCH HTML FILE
+
+WITH SEARCH HTML
 
 <html>
 <head>
@@ -68,13 +65,18 @@ WITHOUT SEARCH HTML FILE
 <center>
 	<form action="http://localhost:80/myphp/store.php" method="post">
 
-		Name: <input type="text" name="name1"> <br><br>
+		Name: <input type="text" name="name"> <br><br>
 		Address1: <input type="text" name="add1"> <br><br>
 		Address2: <input type="text" name="add2"> <br><br>
 		email: <input type="text" name="email"> <br><br>
 
 		<input type="submit" value="Submit"> <br><br>
 
-	</form>
+	</form>Name<form action="http://localhost/myphp/search.php" method="post">
+
+		<input type="text" name="name2">
+		<input type="submit" value="Submit" /> <br><br>
+</center>
+</form>
 </body>
 </html>
