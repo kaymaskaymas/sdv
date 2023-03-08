@@ -58,3 +58,23 @@ enter input data
 reload-> http://localhost/phpmyadmin/
 samne ka samaj lo
 
+WITHOUT SEARCH HTML FILE
+
+<html>
+<head>
+	<title> Program 1</title>
+</head>
+<body>
+<center>
+	<form action="http://localhost:80/myphp/store.php" method="post">
+
+		Name: <input type="text" name="name1"> <br><br>
+		Address1: <input type="text" name="add1"> <br><br>
+		Address2: <input type="text" name="add2"> <br><br>
+		email: <input type="text" name="email"> <br><br>
+
+		<input type="submit" value="Submit"> <br><br>
+
+	</form>
+</body>
+</html>
